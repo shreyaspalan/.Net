@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table>
+            <tr>
+                <td>
+
+                    <asp:Label ID="lblname" runat="server" Text="Label"></asp:Label>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:TextBox ID="txtsearch" runat="server"></asp:TextBox>
+                </td>
+                  <td>
+                    <asp:Button ID="btnsearch" runat="server" Text="search" />
+                </td>
+              
+                <td>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+                    </td>
+                </tr>
+            <tr>
+                <td>
+                    Footer
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
